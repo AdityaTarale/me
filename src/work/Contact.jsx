@@ -14,7 +14,7 @@ const Contact = React.forwardRef(function () {
           <input
             type="text"
             placeholder="email address"
-            className="focus:shadow-outline w-full border-slate-500 bg-slate-500 bg-opacity-10 px-4 py-3 text-slate-50 placeholder:text-gray-500 placeholder:text-opacity-40 focus:outline-none"
+            className="focus:shadow-outline w-full rounded-sm border-slate-500 bg-slate-500 bg-opacity-30 px-4 py-3 text-slate-100 placeholder:text-gray-300 placeholder:text-opacity-40 focus:outline-none"
           />
         </div>
       </div>
