@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Resume() {
   return (
@@ -19,7 +20,7 @@ export default function Resume() {
         <p className="mb-4 text-blue-700">
           <a href="https://github.com/adityatarale">GitHub</a>
           <br />
-          <a href="https://adityatarale.me/work">Website</a>
+          <Link to="/">Website</Link>
           <span className="ml-2 text-black">(give it a look!)</span>
           <br />
           <a href="https://twitter.com/aditya.vmt">Twitter</a>

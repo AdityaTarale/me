@@ -4,12 +4,12 @@ import { getIcon } from "../assets";
 export default function SocialLinks({ className }) {
   const socialLinks = [
     {
-      link: "https://github.com/AdityaTarale",
+      link: "https://www.linkedin.com/in/aditya-tarale-about/",
       icon: getIcon("linkedIn"),
       alt: "Linkedin",
     },
     {
-      link: "https://www.linkedin.com/in/aditya-tarale-about/",
+      link: "https://github.com/AdityaTarale",
       icon: getIcon("github"),
       alt: "Github",
     },
