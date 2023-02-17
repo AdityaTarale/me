@@ -9,6 +9,11 @@ module.exports = {
       height: {
         "h-screen-2": "calc(100vh - 5rem)",
       },
+      lineHeight: {
+        initial: {
+          lineHeight: "initial",
+        },
+      },
       keyframes: {
         tilt: {
           "0%, 50%, 100%": {

@@ -27,3 +27,9 @@ https://www.google.com/search?q=container+class+sizes+list+css&sxsrf=AJOqlzU87vd
 https://www.toptal.com/designers/htmlarrows/symbols/
 
 https://fig.io/
+
+https://www.google.com/search?q=html+semantic+tags&sxsrf=AJOqlzWtMtQQWgxzevOzOT9LvajQJjAnfw:1675538779731&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiMx5euzPz8AhWxU2wGHdV_DgAQ_AUoAXoECAEQAw&cshid=1675538795954014&biw=1680&bih=946&dpr=2#imgrc=t8AtjI5m1UnAYM
+
+https://fontawesomeicons.com/svg/icons/testing-library
+
+https://iconduck.com/icons/113366/chrome-dev

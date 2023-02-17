@@ -1,15 +1,17 @@
-import reactLogo from "./assets/react.svg";
 import { Routes, Route } from "react-router-dom";
 import Work from "./work";
-import "./App.css";
-import Navbar from "./components/Navbar";
 import Resume from "./resume";
+import ComingSoon from "./comingSoon";
+
+import "./App.css";
 
 function App() {
   return (
     <Routes>
       <Route path="/" index element={<Work />} />
       <Route path="resume" element={<Resume />} />
+      <Route path="me" element={<ComingSoon />} />
+      <Route path="gallery" element={<ComingSoon />} />
     </Routes>
   );
 }
