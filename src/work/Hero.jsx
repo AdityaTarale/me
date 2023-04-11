@@ -34,7 +34,7 @@ const AnimatedWord = ({ title }) => {
       ref={animatedWordContainerRef}
     >
       <span
-        className="inline-block translate-y-28 align-middle text-5xl uppercase text-white opacity-0 sm:text-8xl"
+        className="inline-block translate-y-28 align-middle text-4xl uppercase text-white opacity-0 sm:text-8xl"
         ref={animatedWordRef}
       >
         {title}
@@ -94,7 +94,7 @@ const AnimatedLetters = () => {
       {HEADER.map((headerItem, index) => {
         return (
           <span
-            className="animated-letter inline-block translate-y-28 align-middle text-5xl uppercase text-white opacity-0 sm:text-8xl"
+            className="animated-letter inline-block translate-y-28 align-middle text-4xl uppercase text-white opacity-0 sm:text-8xl"
             key={headerItem + index}
           >
             {headerItem}
