@@ -1,8 +1,9 @@
-import { Routes, Route } from "react-router-dom";
-import Work from "./work";
-import Resume from "./resume";
+import { Route, Routes } from "react-router-dom";
 import ComingSoon from "./comingSoon";
+import Resume from "./resume";
+import Work from "./work";
 
+import { useEffect } from "react";
 import "./App.css";
 
 function App() {

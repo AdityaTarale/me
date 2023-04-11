@@ -9,7 +9,7 @@ const Builds = React.forwardRef(function (props, ref) {
           <div className="h-3/4 w-1/4 translate-x-1/4 rotate-45 rounded-tl-3xl rounded-br-3xl bg-gradient-to-tl from-purple-400 to-orange-600 opacity-40 blur-3xl"></div>
           <div className="-translate-x-1/5 h-4/6 w-3/4 -rotate-12 rounded-tl-3xl rounded-br-3xl bg-gradient-to-l from-purple-800 to-orange-600 opacity-30 blur-3xl"></div>
         </div>
-        <h2 className="mb-12 text-center text-4xl font-bold">My Builds</h2>
+        <h2 className="mb-12 text-center text-4xl font-bold">Featured Work</h2>
         <div className="z-[2] grid gap-2 sm:grid-cols-3 sm:grid-rows-3">
           <Card className="">
             <h2>Coming Soon</h2>

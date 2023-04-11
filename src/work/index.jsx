@@ -1,14 +1,16 @@
-import React, { createRef } from "react";
+import React, { createRef, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import About from "./About";
 import Builds from "./Builds";
-import Home from "./Home";
+import Hero from "./Hero";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
+import Experience from "./Experience";
+import Lenis from "@studio-freight/lenis";
 
 export default function Work() {
-  const homeRef = createRef();
+  const heroRef = createRef();
   const aboutRef = createRef();
   const projectRef = createRef();
   const contactRef = createRef();
@@ -17,11 +19,24 @@ export default function Work() {
     ref.current.scrollIntoView();
   }
 
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 4,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
   const links = [
     {
       linkName: "Home",
-      linkUrl: "#home",
-      ref: homeRef,
+      linkUrl: "#hero",
+      ref: heroRef,
     },
     {
       linkName: "About",
@@ -47,8 +62,9 @@ export default function Work() {
   return (
     <>
       <Navbar onNavigate={onNavigate} links={links} />
-      <Home />
+      <Hero />
       <About ref={aboutRef} />
+      <Experience />
       <Skills />
       <Builds />
       <Contact />

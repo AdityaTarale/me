@@ -65,7 +65,7 @@ const Contact = React.forwardRef(function () {
             let's discuss over Chai ☕️
           </p>
         </section>
-        <div className="mx-auto md:w-1/3">
+        <div className="mx-auto md:w-96">
           {/* <h5 className="mb-2 text-xl font-medium text-gray-600">
             
           </h5> */}
