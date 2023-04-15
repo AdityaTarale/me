@@ -1,4 +1,11 @@
 import React, { useState } from "react";
+import {
+  CORS_PROXY,
+  GOOGLE_FORM_ACTION_URL,
+  GOOGLE_FORM_EMAIL_ID,
+  GOOGLE_FORM_MESSAGE_ID,
+  GOOGLE_FORM_NAME_ID,
+} from "../config";
 
 const Contact = React.forwardRef(function () {
   const titleArray = [
@@ -10,21 +17,17 @@ const Contact = React.forwardRef(function () {
   const inputType = ["text", "text", "email"];
 
   const [message, setMessage] = useState("");
-  const [fullName, setFullName] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
   const [step, setStep] = useState(0);
-
-  const handleSendEmail = () => {
-    console.log("Sent");
-  };
 
   const valueOfInput = () => {
     if (step == 0) {
       return message;
     }
     if (step === 1) {
-      return fullName;
+      return name;
     }
     if (step === 2) {
       return email;
@@ -36,7 +39,7 @@ const Contact = React.forwardRef(function () {
       setMessage(event.target.value);
     }
     if (step === 1) {
-      setFullName(event.target.value);
+      setName(event.target.value);
     }
     if (step === 2) {
       setEmail(event.target.value);
@@ -53,7 +56,24 @@ const Contact = React.forwardRef(function () {
     }
     if (step === 2) {
       setStep(3);
+      setTimeout(() => {
+        sendEmail();
+      }, 1500);
     }
+  };
+
+  const sendEmail = () => {
+    const formData = new FormData();
+
+    formData.append(GOOGLE_FORM_MESSAGE_ID, message);
+    formData.append(GOOGLE_FORM_NAME_ID, name);
+    formData.append(GOOGLE_FORM_EMAIL_ID, email);
+    fetch(CORS_PROXY + GOOGLE_FORM_ACTION_URL, {
+      method: "POST",
+      data: formData,
+    })
+      .then((res) => res.json)
+      .then((data) => console.log(data));
   };
 
   return (

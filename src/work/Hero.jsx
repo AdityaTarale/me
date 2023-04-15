@@ -70,8 +70,6 @@ const AnimatedLetters = () => {
     inView(letterContainerRef.current, () => {
       const letters = document.querySelectorAll(".animated-letter");
 
-      console.log(letters);
-
       animate(
         letters,
         {

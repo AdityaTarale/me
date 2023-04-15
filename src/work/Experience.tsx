@@ -40,7 +40,7 @@ const TransformXAxisCard = ({ children }) => {
 
 function ExperienceBoxCard({ imgUrl, companyTitle, jobTitle, date }) {
   return (
-    <section className="opacity:0.5  transform:none mb-4 flex w-full place-items-center gap-1 rounded-lg border border-emerald-600/30 bg-emerald-600/10 p-4 opacity-60 sm:gap-4">
+    <section className="opacity:0.5  transform:none mb-4 flex w-full place-items-center gap-1 rounded-lg border border-emerald-600/30 bg-emerald-600/10 p-4 sm:gap-4">
       <span className="flex aspect-square w-14 align-middle sm:w-20">
         <img
           loading="lazy"
