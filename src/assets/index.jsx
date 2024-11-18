@@ -31,6 +31,7 @@ import linkedInLogo from "../assets/linkedin.svg";
 import githubLogo from "../assets/github.svg";
 import twitterLogo from "../assets/twitter.svg";
 import signatureLogo from "../assets/signature.png";
+import npmBg from "../assets/npm.png";
 
 const icons = {
   react: reactLogo,
@@ -66,6 +67,7 @@ const icons = {
   github: githubLogo,
   twitter: twitterLogo,
   signature: signatureLogo,
+  npmBg: npmBg,
 };
 
 export const getIcon = (iconKey) => icons[iconKey];
