@@ -22,7 +22,7 @@ export default function SocialLinks({ className }) {
 
   return (
     <div className={className}>
-      <div className="flex space-x-4">
+      <div className="flex justify-end space-x-4">
         {socialLinks.map((social) => {
           return (
             <a

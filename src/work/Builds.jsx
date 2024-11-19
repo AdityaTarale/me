@@ -6,12 +6,8 @@ const Builds = React.forwardRef(function (props, ref) {
   return (
     <section id="builds" ref={ref} className="w-full bg-black">
       <div className="container relative mx-auto py-24 text-white sm:w-8/12">
-        <div className="absolute inset-0 z-[1] grid place-items-center">
-          <div className="h-3/4 w-1/4 translate-x-1/4 rotate-45 rounded-tl-3xl rounded-br-3xl bg-gradient-to-tl from-purple-400 to-orange-600 opacity-40 blur-3xl"></div>
-          <div className="-translate-x-1/5 h-4/6 w-3/4 -rotate-12 rounded-tl-3xl rounded-br-3xl bg-gradient-to-l from-purple-800 to-orange-600 opacity-30 blur-3xl"></div>
-        </div>
         <h2 className="mb-12 text-center text-4xl font-bold">Featured Work</h2>
-        <div className="z-[2] grid gap-2 sm:grid-cols-3 sm:grid-rows-2">
+        <div className="z-[2] grid gap-2 sm:grid-cols-3 sm:grid-rows-[min-content,1fr]">
           {/* <Card className="">
             <h2>Coming Soon1</h2>
           </Card> */}
@@ -29,7 +25,7 @@ const Builds = React.forwardRef(function (props, ref) {
           </Card>
           <Card className="sm:col-span-2">
             <ProjectPreview
-              url="https://evieetech.com/"
+              image="evieeTech"
               title="Eviee Technologies Limited"
               description={[
                 "A business website for IT solutions and services, designed for Eviee Technologies Limited, which provides advanced tech solutions for clients across industries.",
@@ -47,7 +43,7 @@ const Builds = React.forwardRef(function (props, ref) {
           </Card> */}
           <Card className="sm:col-span-full">
             <ProjectPreview
-              url="https://naest.shiksha-sopan.org/"
+              image="naest"
               title="The National Anveshika Experimental Skill Test (NAEST)"
               description={[
                 "An annual competition in India focused on assessing and nurturing students’ experimental skills in physics.",

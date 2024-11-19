@@ -78,41 +78,47 @@ const Contact = React.forwardRef(function () {
 
   return (
     <div id="contact" className="border-t border-t-gray-900 bg-black">
-      <div className="container mx-auto py-14">
-        <section className="text-center text-white">
-          <p className="mx-auto mb-12 text-2xl font-bold text-gray-300 md:w-1/2">
-            I am always excited to work on some awesome projects, message me and
-            let's discuss over Chai ☕️
-          </p>
-        </section>
-        <div className="mx-auto md:w-96">
-          {/* <h5 className="mb-2 text-xl font-medium text-gray-600">
+      <div className="container relative mx-auto py-24 text-white sm:w-8/12">
+        <div className="absolute inset-0 z-[1] grid place-items-center">
+          <div className="h-3/4 w-1/4 translate-x-1/4 rotate-45 rounded-tl-3xl rounded-br-3xl bg-gradient-to-tl from-purple-400 to-orange-600 opacity-40 blur-3xl"></div>
+          <div className="-translate-x-1/5 h-4/6 w-3/4 -rotate-12 rounded-tl-3xl rounded-br-3xl bg-gradient-to-l from-purple-800 to-orange-600 opacity-30 blur-3xl"></div>
+        </div>
+        <div className="container mx-auto py-14">
+          <section className="text-center text-white">
+            <p className="mx-auto mb-12 text-2xl font-bold text-gray-300 md:w-1/2">
+              I am always excited to work on some awesome projects, message me
+              and let's discuss over Chai ☕️
+            </p>
+          </section>
+          <div className="mx-auto md:w-96">
+            {/* <h5 className="mb-2 text-xl font-medium text-gray-600">
             
           </h5> */}
-          <form onSubmit={handleSubmit}>
-            <input
-              type={inputType[step]}
-              value={valueOfInput()}
-              onChange={handleChange}
-              placeholder={titleArray[step]}
-              className="focus:shadow-outline w-full rounded-sm border-slate-500 bg-slate-500 bg-opacity-30 px-4 py-3 text-slate-100 placeholder:text-gray-300 placeholder:text-opacity-40 focus:outline-none"
-            />
-          </form>
-          <div className="max-w-full shadow">
-            <div
-              className="h-1 rounded bg-gray-200"
-              role="progressbar"
-              aria-valuenow="width"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
+            <form onSubmit={handleSubmit}>
+              <input
+                type={inputType[step]}
+                value={valueOfInput()}
+                onChange={handleChange}
+                placeholder={titleArray[step]}
+                className="focus:shadow-outline w-full rounded-sm border-slate-500 bg-slate-500 bg-opacity-30 px-4 py-3 text-slate-100 placeholder:text-gray-300 placeholder:text-opacity-40 focus:outline-none"
+              />
+            </form>
+            <div className="max-w-full shadow">
               <div
-                className="h-1 bg-green-400 text-center"
-                style={{
-                  width: `${step * 33.33}%`,
-                  transition: "width 2s ease-out",
-                }}
-              ></div>
+                className="h-1 rounded bg-gray-200"
+                role="progressbar"
+                aria-valuenow="width"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div
+                  className="h-1 bg-green-400 text-center"
+                  style={{
+                    width: `${step * 33.33}%`,
+                    transition: "width 2s ease-out",
+                  }}
+                ></div>
+              </div>
             </div>
           </div>
         </div>

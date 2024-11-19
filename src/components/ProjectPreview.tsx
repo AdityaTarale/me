@@ -17,12 +17,8 @@ export default function ProjectPreview({
   website: string;
 }) {
   return (
-    <div className="flex h-full flex-1 flex-col">
-      {image ? (
-        <img loading="lazy" src={getIcon(image)} alt="signature" />
-      ) : (
-        <iframe src={url} className="transform:'scale(1)' h-[300px] w-full" />
-      )}
+    <div className="flex flex-col">
+      <img loading="lazy" src={getIcon(image)} alt="signature" />
       <div className="w-full p-4">
         <h3
           data-testid="title"
@@ -37,7 +33,7 @@ export default function ProjectPreview({
               : description[0]}
           </span>
         )}
-        <div className="mb-2 text-sm">
+        <div className="text-sm">
           <span className="font-medium text-white">{tag}</span> •{" "}
           <span className="text-slate-50">{website}</span>
         </div>

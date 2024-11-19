@@ -32,6 +32,8 @@ import githubLogo from "../assets/github.svg";
 import twitterLogo from "../assets/twitter.svg";
 import signatureLogo from "../assets/signature.png";
 import npmBg from "../assets/npm.png";
+import naest from "../assets/naest.png";
+import evieeTech from "../assets/eviee-tech.png";
 
 const icons = {
   react: reactLogo,
@@ -68,6 +70,8 @@ const icons = {
   twitter: twitterLogo,
   signature: signatureLogo,
   npmBg: npmBg,
+  naest: naest,
+  evieeTech: evieeTech,
 };
 
 export const getIcon = (iconKey) => icons[iconKey];
