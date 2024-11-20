@@ -86,8 +86,8 @@ const Contact = React.forwardRef(function () {
         <div className="container mx-auto py-14">
           <section className="text-center text-white">
             <p className="mx-auto mb-12 text-2xl font-bold text-gray-300 md:w-1/2">
-              I am always excited to work on some awesome projects, message me
-              and let's discuss over Chai ☕️
+              🌟 Excited to work on more impactful projects? Drop me a message,
+              and let’s bring your ideas to life over a cup of coffee ☕!
             </p>
           </section>
           <div className="mx-auto md:w-96">

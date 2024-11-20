@@ -14,7 +14,7 @@ export default function SocialLinks({ className }) {
       alt: "Github",
     },
     {
-      link: "#twitter",
+      link: "https://x.com/AdiTarale",
       icon: getIcon("twitter"),
       alt: "Twitter",
     },

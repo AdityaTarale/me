@@ -17,7 +17,7 @@ const Builds = React.forwardRef(function (props, ref) {
               title="rvelocity-cli"
               description={[
                 "A CLI for generating and managing React and React Native components with ease.",
-                "rvelocity-cli simplifies the development process by offering quick commands to initialize new React/React Native projects and create components. It helps developers focus on building features rather than dealing with repetitive tasks.",
+                "Overview: rvelocity-cli enhances productivity by providing quick commands to initialize new projects and create components effortlessly. Say goodbye to repetitive tasks and focus on building robust features instead.",
               ]}
               tag="npm"
               website="https://www.npmjs.com/package/rvelocity-cli"
@@ -28,8 +28,8 @@ const Builds = React.forwardRef(function (props, ref) {
               image="evieeTech"
               title="Eviee Technologies Limited"
               description={[
-                "A business website for IT solutions and services, designed for Eviee Technologies Limited, which provides advanced tech solutions for clients across industries.",
-                "This project was created as part of a freelancing assignment and showcases the company's services in web development, software solutions, and consulting.",
+                "A dynamic website for Eviee Technologies Limited, offering IT solutions and consulting services for various industries.",
+                "Overview: Designed as part of a freelance project, this site showcases Eviee Technologies’ innovative approach in tech solutions, helping them connect with a broad client base across sectors.",
               ]}
               tag="website"
               website="https://evieetech.com"
@@ -47,7 +47,7 @@ const Builds = React.forwardRef(function (props, ref) {
               title="The National Anveshika Experimental Skill Test (NAEST)"
               description={[
                 "An annual competition in India focused on assessing and nurturing students’ experimental skills in physics.",
-                "This open-source project is dedicated to retired IIT professor H.C. Verma, known for his contributions to physics education in India. NAEST aims to encourage students to engage with hands-on learning and experimentation.",
+                "Overview: This open-source project is dedicated to retired IIT professor H.C. Verma, known for his contributions to physics education in India. NAEST aims to encourage students to engage with hands-on learning and experimentation.",
               ]}
               tag="webapp"
               website="https://naest.shiksha-sopan.org"

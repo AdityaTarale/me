@@ -59,7 +59,9 @@ export default function Footer({ links }) {
           <LinkBoxes linksTop={links} />
         </div>
       </div>
-      <p className="py-3 text-center text-gray-400"> Made by Me 🍉</p>
+      <p className="py-3 text-center text-gray-400">
+        Crafted with ❤️ by Aditya Tarale
+      </p>
     </footer>
   );
 }

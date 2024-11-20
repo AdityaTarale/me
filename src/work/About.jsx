@@ -90,13 +90,7 @@ const About = React.forwardRef(function (props, ref) {
             <AnimatedParagraph paragraph="On Special Occasions I Reinvent Wheel" />
           </h1>
           <p className="text-xl">
-            <AnimatedParagraph
-              paragraph="About me, Keeper, I’m a UI developer specializing
-            in component-driven development, design systems . I’m a React
-            Developer at Appsphere and a contributor to open-source. Originally
-            from Nagpur, I currently live in Indore. In my spare time, I try
-            learn to cook."
-            />
+            <AnimatedParagraph paragraph="👋 Hi, I’m Aditya Tarale – a passionate UI developer originally from 🌆 Nagpur, now living in 🏡 Indore. I specialize in component-driven development and design systems, and I’m currently working as a React Developer at Appsphere Software LLP 💻. Besides coding, I’m diving into the world of cooking 👨‍🍳 – trying out new recipes one dish at a time! On special occasions, I like to reinvent the wheel 🔄, experimenting with fresh ideas and creative solutions. Let’s connect over coffee ☕ and talk about building amazing projects together!" />
           </p>
         </aside>
       </div>
